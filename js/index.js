@@ -208,6 +208,8 @@ function formatTime(deadline) {
  * start() starts the work timer.
  */
 function start() {
+    // clear interval if already running
+    clearInterval(timeInterval);
 	// get an absolute date based on remaining time
 	deadline = new Date(Date.parse(new Date()) + remainingTime * 1000);
 	// change state and timer background color
@@ -221,6 +223,8 @@ function start() {
  * startBreak() starts the break timer.
  */
 function startBreak() {
+    // clear interval if already running
+    clearInterval(timeInterval);
 	// get an absolute date based on remaining time
 	deadline = new Date(Date.parse(new Date()) + remainingTime * 1000);
 	// change state and timer background color
@@ -329,6 +333,7 @@ $(document).ready(function() {
 	$(".reset").click(function() {
 		remainingTime = workTimeDef * 60;
 		state = "";
+        bgColor = bgGreen;
 		display(deadline);
 	});
 	
