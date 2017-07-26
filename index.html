@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Timer</title>
+  
+  <meta name="author" content="Christos Zonios">
+    
+    <!-- Browser tab icon -->
+    <link rel="icon" type="image/png" href="./img/icons/tomato.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./img/icons/tomato.png" sizes="32x32">
+    
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="header">
+	<h1>Pomodoro Timer</h1>
+	<div class="settings">
+		<div class="work">
+			
+			<h3>Work Length</h3>
+			<h2><span class="clickable work-minus">-</span><span class="work-time">25</span><span class="clickable work-plus">+</span></h2>
+			
+		</div>
+		<div class="break">
+			
+			<h3>Break Length</h3>
+			<h2><span class="clickable break-minus">-</span><span class="break-time">5</span><span class="clickable break-plus">+</span></h2>
+			
+		</div>
+		
+	</div>
+</div>
+<hr>
+<div class="clickable pomodoro">
+	<div class="filler">
+		<h1>Start</h1>
+		<br>
+		<h2>25:00</h2>
+	</div>
+</div>
+<br>
+<span class="reset clickable"><h3>Reset Timer</h3></span>
+<footer>
+	<p>Long break length is <span class="clickable long-break-minus">-</span><span class="long-break-time">15</span><span class="clickable long-break-plus">+</span> minutes.</p>
+	<br>
+	<p><small>Written and coded by <a href="https://czonios.github.io">Christos Zonios</a>.</small></p>
+</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

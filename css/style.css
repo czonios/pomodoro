@@ -1,0 +1,130 @@
+:root {
+    --black: #212121;
+	--green: #7CB342;
+	--white: #FAFAFA;
+	--red:   #FF5722;
+	--hover: #B0BEC5;
+}
+
+body {
+  	background: var(--black);
+	margin-top: 50px;
+	font-family: "Open Sans";
+}
+
+.header {
+	text-shadow: 2px 2px 6px rgba(120, 144, 156, 0.33);
+	text-align: center;
+	color: var(--white);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.settings {
+	text-shadow: none;
+	padding-top: 20px;
+	
+}
+
+.settings h3 {
+	font-size: 1.4em;
+	font-weight: 100;
+	color: var(--white);
+}
+
+.work {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.work-plus {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.work-minus {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.break {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.break-plus {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.break-minus {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+hr {
+	max-width: 250px;
+	border-top: 1px var(--white) solid;
+}
+
+.pomodoro {
+	border: 3px var(--green) solid;
+	border-radius: 50%;
+	text-align: center;
+	color: var(--white);
+	width: 250px;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.filler {
+	padding-top: 35px;
+	border-radius: 50%;
+	border: 3px var(--black); solid;
+	background: var(--black);
+	position: absolute;
+   	height: 240px;
+   	width: 240px;
+   	top: 50%;
+   	left: 50%;
+   	margin: -120px 0px 0px -120px;
+	
+}
+
+.clickable {
+  	cursor: pointer;
+  	color: var(--white);
+}
+.clickable:hover {
+  	color: var(--hover);
+	text-shadow: 1px 1px 6px rgba(120, 144, 156, 0.25);
+}
+
+.reset {
+	text-align: center;
+}
+
+footer {
+	color: var(--white);
+	text-align: center;
+}
+
+.long-break-plus {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.long-break-minus {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+footer a{
+	color: var(--green);
+}
+
+footer a:hover {
+	color: var(--hover);
+}
