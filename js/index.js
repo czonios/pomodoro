@@ -331,6 +331,7 @@ $(document).ready(function() {
 	});
 	
 	$(".reset").click(function() {
+        clearInterval(timeInterval);
 		remainingTime = workTimeDef * 60;
 		state = "";
         bgColor = bgGreen;
