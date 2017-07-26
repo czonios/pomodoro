@@ -12,8 +12,10 @@ Pomodoro web application in Javascript, HTML and CSS. Written as a project for [
 
 ### To do
 * Change clickable plus/minus signs to buttons so that fast clicking will not select them as text.
-* Add a menu setting.
-* Add more settings.
+* Show completed pomodoro counter
+* Add a settings menu.
+* Add setting for how many completed pomodoros before long break.
+* Add setting for selecting colors from a list.
 
 [https://czonios.github.io/pomodoro](https://czonios.github.io/pomodoro)
 
