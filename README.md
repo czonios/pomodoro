@@ -1,18 +1,23 @@
 # Pomodoro Timer
 
-Pomodoro web application in Javascript, HTML and CSS. Written as a project for [FreeCodeCamp](https://freecodecamp.org)
+Pomodoro web application in Javascript, HTML and CSS. Written as a project for [FreeCodeCamp](https://freecodecamp.org).
 
 ### Features
 
-* Material design GUI
-* Customizable length of work, break and long break sessions
-* Pause/Unpause function
-* Reset function
-* Single, discreet bell ring at the end of each session
+* Material design GUI.
+* Customizable length of work, break and long break sessions.
+* Pause/Unpause function.
+* Reset function.
+* Single, discreet bell ring at the end of each session.
+
+### To do
+* Change clickable plus/minus signs to buttons so that fast clicking will not select them as text.
+* Add a menu setting.
+* Add more settings.
 
 [https://czonios.github.io/pomodoro](https://czonios.github.io/pomodoro)
 
-Written and coded by [Christos Zonios](https://czonios.github.io)
+Written and coded by [Christos Zonios](https://czonios.github.io).
 
 ### My other websites
 
