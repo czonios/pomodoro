@@ -8,8 +8,8 @@
 
 body {
   	background: var(--black);
-	margin-top: 50px;
-	font-family: "Open Sans";
+	margin-top: 5%;
+	font-family: "Sans Serif";
 }
 
 .header {
@@ -64,6 +64,7 @@ body {
 
 hr {
 	max-width: 250px;
+    width: 100vw;
 	border-top: 1px var(--white) solid;
 }
 
@@ -72,8 +73,10 @@ hr {
 	border-radius: 50%;
 	text-align: center;
 	color: var(--white);
-	width: 250px;
-	height: 250px;
+	max-width: 250px;
+	max-height: 250px;
+    height: 100vh;
+    width: 100vw;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -82,7 +85,7 @@ hr {
 .filler {
 	padding-top: 35px;
 	border-radius: 50%;
-	border: 3px var(--black); solid;
+	border: 3px var(--black) solid;
 	background: var(--black);
 	position: absolute;
    	height: 240px;
@@ -96,6 +99,12 @@ hr {
 .clickable {
   	cursor: pointer;
   	color: var(--white);
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
 }
 .clickable:hover {
   	color: var(--hover);
@@ -119,6 +128,11 @@ footer {
 .long-break-minus {
 	margin-left: 5px;
 	margin-right: 5px;
+}
+
+.setting-lb {
+    text-align: center;
+    color: var(--white);
 }
 
 footer a{
