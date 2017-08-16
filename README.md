@@ -9,9 +9,9 @@ Pomodoro web application in Javascript, HTML and CSS. Written as a project for [
 * Pause/Unpause function.
 * Reset function.
 * Single, discreet bell ring at the end of each session.
+* Optimized for all screens down to 240x320 pixel resolution.
 
 ### To do
-* Change clickable plus/minus signs to buttons so that fast clicking will not select them as text.
 * Show completed pomodoro counter
 * Add a settings menu.
 * Add setting for how many completed pomodoros before long break.
