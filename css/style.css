@@ -154,11 +154,11 @@ footer a:hover {
     }
     
     .settings h3 {
-	   font-size: 1em;
+        font-size: 1em;
     }
 
     .work h2 {
-	   font-size: 1.5em;
+        font-size: 1.5em;
     }
 
     .break h2 { 
@@ -166,7 +166,7 @@ footer a:hover {
     }
 	   
     .reset h3 {
-	   font-size: 1.3em;
+        font-size: 1.3em;
     }
     
     .setting-lb p {
@@ -174,7 +174,7 @@ footer a:hover {
     }
 
     footer small {
-	   font-size: 0.75em;
+        font-size: 0.75em;
     }
     
 }
@@ -182,15 +182,15 @@ footer a:hover {
 @media (max-width: 640px) {
     
     .pomodoro {
-	   max-width: 200px;
-	   max-height: 200px;
+        max-width: 200px;
+        max-height: 200px;
     }
 
     .filler {
-   	    padding-top: 5px;
-   	    height: 180px;
-   	    width: 180px;
-   	    margin: -90px 0px 0px -90px;
+        padding-top: 5px;
+   	    height: 190px;
+   	    width: 190px;
+   	    margin: -95px 0px 0px -95px;
     }
     
 }
@@ -264,9 +264,9 @@ footer a:hover {
 
     .filler {
    	    padding-top: 0px;
-   	    height: 110px;
-   	    width: 110px;
-   	    margin: -55px 0px 0px -55px;
+   	    height: 116px;
+   	    width: 116px;
+   	    margin: -58px 0px 0px -58px;
     }
 	   
     .reset h3 {
