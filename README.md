@@ -23,7 +23,9 @@ The Pomodoro Technique is a time management method developed by Francesco Cirill
 
 ## [https://czonios.github.io/pomodoro](https://czonios.github.io/pomodoro)
 
-### Written and coded by [Christos Zonios](https://czonios.github.io).
+### Author
+
+[Christos Zonios](https://czonios.github.io).
 
 ### My other websites
 
