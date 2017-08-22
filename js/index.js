@@ -53,21 +53,26 @@ function display(deadline) {
 	$(".long-break-time").text(longBreakTimeDef);
 	
 	// Create string with HTML depending on state and time remaining
+    // and update page title according to session/timer state
 	var str;
 	switch(state) {
 		case "start":
+            $(".title").text(time + " - Work");
 			str = "<h1>Work</h1><br><h2>" + time + "</h2>";
 			break;
 		case "pause":
+            $(".title").text(time + " - Paused (Work)");
 			str = "<h1>Unpause</h1><br><h2>" + time + "</h2>";
 			break;
 		case "break":
+            $(".title").text(time + " - Break");
 			if (count % 4 == 0)
 				str = "<h1>Long Break</h1><br><h2>" + time + "</h2>";
 			else
 				str = "<h1>Break</h1><br><h2>" + time + "</h2>";
 			break;
 		case "pauseBreak":
+            $(".title").text(time + " - Paused (Break)");
 			str = "<h1>Unpause Break</h1><br><h2>" + time + "</h2>";
 			break;
 		default:
