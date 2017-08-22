@@ -21,9 +21,9 @@ The Pomodoro Technique is a time management method developed by Francesco Cirill
 * Add setting for how many completed pomodoros before long break.
 * Add setting for selecting colors from a list.
 
-[https://czonios.github.io/pomodoro](https://czonios.github.io/pomodoro)
+## [https://czonios.github.io/pomodoro](https://czonios.github.io/pomodoro)
 
-Written and coded by [Christos Zonios](https://czonios.github.io).
+### Written and coded by [Christos Zonios](https://czonios.github.io).
 
 ### My other websites
 
