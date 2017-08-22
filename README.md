@@ -8,7 +8,7 @@ The Pomodoro Technique is a time management method developed by Francesco Cirill
 
 ### Features
 
-* Material design GUI.
+* Material design UI.
 * Customizable length of work, break and long break sessions.
 * Pause/Unpause function.
 * Reset function.
@@ -20,6 +20,7 @@ The Pomodoro Technique is a time management method developed by Francesco Cirill
 * Add a settings menu.
 * Add setting for how many completed pomodoros before long break.
 * Add setting for selecting colors from a list.
+* Add setting for volume control (with preview).
 
 ## [https://czonios.github.io/pomodoro](https://czonios.github.io/pomodoro)
 
