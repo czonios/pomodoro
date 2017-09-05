@@ -73,13 +73,16 @@ function display(deadline) {
 			break;
 		case "pauseBreak":
             $(".title").text(time + " - Paused (Break)");
-			str = "<h1>Unpause Break</h1><br><h2>" + time + "</h2>";
+			str = "<h1>Unpause</h1><br><h2>" + time + "</h2>";
 			break;
 		default:
 			str = "<h1>Start</h1><br><h2>" + workTimeDef + ":00</h2>";
 				}
 	// display the string in HTML
 	$(".filler").html(str);
+    
+    // update pomodoro count
+    $("#counter").text("Completed Pomodoros: " + count);
 }
 
 /**
