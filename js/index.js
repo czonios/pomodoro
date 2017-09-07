@@ -1,6 +1,10 @@
 // state of the clock initialized to nothing
 var state = "";
 
+// Bell sound
+var bell = document.getElementById("bell");
+
+
 // Default work & break times (may change with plus/minus buttons)
 var workTimeDef = 25;
 var breakTimeDef = 5;
@@ -81,8 +85,6 @@ function display(deadline) {
 	// display the string in HTML
 	$(".filler").html(str);
     
-    // update pomodoro count
-    $("#counter").text("Completed Pomodoros: " + count);
 }
 
 /**
@@ -150,15 +152,15 @@ function initializeClock(deadline) {
 	else // if paused, stop the intervals
 		clearInterval(timeInterval);
 	  
-	// checks if the current session is over	
+	// check if the current session is over	
     if (time <= 0) {
-		// plays a bell sound
-		var audio = new Audio("./audio/bell.mp3");
-		audio.play();
-		// stops the intervals
+		// play a bell sound
+		bell.play()
+
+		// stop the intervals
      	clearInterval(timeInterval);
 		
-		// checks which session we are at
+		// check which session we are at
 		if (state == "start") { // if we were on a work session,
 			//increment completed pomodoro counter
 			count++;
@@ -167,6 +169,9 @@ function initializeClock(deadline) {
 				remainingTime = longBreakTimeDef * 60;
 			else // if not, normal break
 				remainingTime = breakTimeDef * 60;
+
+			// update pomodoro count
+			$("#counter").text("Completed Pomodoros: " + count);
 			
 			// change state to break and start the break timer
 			state = "break";
