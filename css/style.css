@@ -1,13 +1,14 @@
 :root {
-    --black: #212121;
-	--green: #7CB342;
-	--white: #FAFAFA;
-	--red:   #FF5722;
+    --bg: #212121;
+	--work: #7CB342;
+    --text: #FAFAFA;
+    --text-gray: #BDBDBD;
+	--break:   #FF5722;
 	--hover: #B0BEC5;
 }
 
 body {
-  	background: var(--black);
+  	background: var(--bg);
 	margin-top: 5%;
 	font-family: "Sans Serif";
     margin-left: auto;
@@ -19,7 +20,7 @@ body {
 .header {
 	text-shadow: 2px 2px 6px rgba(120, 144, 156, 0.33);
 	text-align: center;
-	color: var(--white);
+	color: var(--text);
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -33,7 +34,7 @@ body {
 .settings h3 {
 	font-size: 1.4em;
 	font-weight: 100;
-	color: var(--white);
+	color: var(--text);
 }
 
 .work {
@@ -69,14 +70,14 @@ body {
 hr {
 	max-width: 250px;
     width: 50vw;
-	border-top: 1px var(--white) solid;
+	border-top: 1px var(--text) solid;
 }
 
 .pomodoro {
-	border: 3px var(--green) solid;
+	border: 3px var(--work) solid;
 	border-radius: 50%;
 	text-align: center;
-	color: var(--white);
+	color: var(--text);
 	max-width: 250px;
 	max-height: 250px;
     height: 100vh;
@@ -89,8 +90,8 @@ hr {
 .filler {
 	padding-top: 35px;
 	border-radius: 50%;
-	border: 3px var(--black) solid;
-	background: var(--black);
+	border: 3px var(--bg) solid;
+	background: var(--bg);
 	position: absolute;
    	height: 240px;
    	width: 240px;
@@ -102,7 +103,7 @@ hr {
 
 .clickable {
   	cursor: pointer;
-  	color: var(--white);
+  	color: var(--text);
     -webkit-touch-callout: none; 
     -webkit-user-select: none; 
     -khtml-user-select: none; 
@@ -116,9 +117,9 @@ hr {
 }
 
 .counter {
-    color: var(--white);
+    color: var(--text-gray);
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 1.5em;
 }
 
 .reset {
@@ -126,7 +127,7 @@ hr {
 }
 
 footer {
-	color: var(--white);
+	color: var(--text);
 	text-align: center;
 }
 
@@ -142,11 +143,11 @@ footer {
 
 .setting-lb {
     text-align: center;
-    color: var(--white);
+    color: var(--text);
 }
 
 footer a {
-	color: var(--green);
+	color: var(--work);
 }
 
 footer a:hover {
@@ -160,6 +161,10 @@ footer a:hover {
     }
     
     .settings h3 {
+        font-size: 1em;
+    }
+
+    .counter {
         font-size: 1em;
     }
 
