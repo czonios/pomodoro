@@ -279,6 +279,7 @@ $(document).ready(function() {
 	
 	// add a minute to work session default & remaining time
 	$(".work-plus").click(function(){
+		
 		if (state == "" || state == "pause" || state == "pauseBreak") {
 			workTimeDef++;
 			if (state == "pause")
@@ -290,17 +291,30 @@ $(document).ready(function() {
 	
 	// subtract a minute from work session default & remaining time
 	$(".work-minus").click(function(){
-		if (remainingTime > 61 && workTimeDef > 1 && (state == "" || state == "pause" || state == "pauseBreak") ) {
-			workTimeDef--;
-			if (state == "pause")
+		
+		if (state == "pause" ){
+			if (remainingTime > 60 && workTimeDef > 1) {
+				workTimeDef--;
 				remainingTime -= 60;
-			deadline = new Date(Date.parse(new Date()) + remainingTime * 1000);
-			display(deadline);
+				deadline = new Date(Date.parse(new Date()) + remainingTime * 1000);
+				display(deadline);
+			}
 		}
+		else if (state == "" || state == "pauseBreak") {
+			if (workTimeDef > 1) {
+				workTimeDef--;
+				deadline = new Date(Date.parse(new Date()) + remainingTime * 1000);
+				display(deadline);
+			}
+		}
+
+
+
 	});
 	
 	// add a minute to break session default & remaining time
 	$(".break-plus").click(function(){
+
 		if (state == "" || state == "pause" || state == "pauseBreak") {
 			breakTimeDef++;
 			if (state == "pauseBreak")
@@ -312,12 +326,21 @@ $(document).ready(function() {
 	
 	// subtract a minute from break session default & remaining time
 	$(".break-minus").click(function(){
-		if (remainingTime > 61 && breakTimeDef > 1 && (state == "" || state == "pause" || state == "pauseBreak") ) {
-			breakTimeDef--;
-			if (state == "pauseBreak")
+
+		if (state == "pauseBreak" ){
+			if (remainingTime > 60 && breakTimeDef > 1) {
+				breakTimeDef--;
 				remainingTime -= 60;
-			deadline = new Date(Date.parse(new Date()) + remainingTime * 1000);
-			display(deadline);
+				deadline = new Date(Date.parse(new Date()) + remainingTime * 1000);
+				display(deadline);
+			}
+		}
+		else if (state == "" || state == "pause") {
+			if (breakTimeDef > 1) {
+				breakTimeDef--;
+				deadline = new Date(Date.parse(new Date()) + remainingTime * 1000);
+				display(deadline);
+			}
 		}
 	});
 	
