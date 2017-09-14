@@ -1,11 +1,8 @@
-// import {Pomodoro as pom} from './pomodoro'
-// import {Display as display} from './display'
-// import {Timer as timer} from './timer'
-
-// const pom = require('./pomodoro');
-// const timer = require('./timer');
-// const display = require('./display');
-
+/**
+ * index.js
+ * is the controller script. 
+ * Button presses and clicks are controlled here.
+ */
 
 /**
  * toggle() runs when the timer is clicked.

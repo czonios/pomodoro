@@ -1,8 +1,8 @@
-// export default  {}
-
-//module.exports = {
-
-//export default Pomodoro = {
+/**
+ * pomodoro.js
+ * pom object holds the variables and information
+ * for the pomodoro timer. 
+ */
 
 const pom = {
 

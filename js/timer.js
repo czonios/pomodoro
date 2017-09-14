@@ -1,15 +1,12 @@
-// import {Pomodoro as pom} from './pomodoro'
-// import {Display as display} from './display'
-
-// const pom = require('./pomodoro');
-// const display = require('./display');
+/**
+ * timer.js
+ * is the timer logic.
+ * It is an object holding the necessary functions and variables to
+ * start, pause, continue, and initialize the clock.
+ */
 
 let deadline;
 let timeInterval;
-
-//module.exports = {
-
-//export default Timer = {
 
 const timer = {
 
