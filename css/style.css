@@ -9,7 +9,7 @@
 
 body {
   	background: var(--bg);
-	margin-top: 5%;
+	margin: auto;
 	font-family: "Sans Serif";
     margin-left: auto;
 	margin-right: auto;
