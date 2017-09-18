@@ -1,4 +1,9 @@
-# Pomodoro Timer
+
+<p align="center">
+<img src="/img/icons/512.png" alt="Pomodoro icon made by Fotini Exarchou" width="200">
+</p>
+
+<h1 align="center"> Pomodoro Timer </h1>
 
 Pomodoro web application in Javascript, HTML and CSS. Written as a project for [FreeCodeCamp](https://freecodecamp.org).
 
